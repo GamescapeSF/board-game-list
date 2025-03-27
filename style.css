@@ -1,0 +1,43 @@
+body{
+	margin: 0 auto;
+	background-image: url("./img/bg_img.png");
+}
+
+h1 {
+	text-align: center;
+}
+
+.padding {
+	margin: 0 auto;
+	width: 80%;
+	padding: 40px 120px;
+	background-color: rgba(255,255,255,0.9);
+	background-blend-mode: lighten;
+}
+
+.list-header a{
+	color:black;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.list-header a:hover{
+	text-decoration: none;
+}
+
+.list ul {
+	columns: 4;            /* Number of columns */
+	column-gap: 2rem;
+	list-style: disc;
+	margin-left: 1rem;
+	padding: 0;
+  }
+
+.list a{
+	color: #9c0e04;
+	text-decoration: underline;
+}
+
+.list a:hover{
+	text-decoration: none;
+}
