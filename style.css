@@ -1,15 +1,58 @@
 body{
 	margin: 0 auto;
 	background-image: url("./img/bg_img.png");
+	background-size: cover;
+	font: normal 14px / 22px 'Lato', Helvetica, Arial, sans-serif !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
+}
+
+.header-wrapper{
+	text-align: center;
 }
 
 h1 {
+	position: relative;
+	display: inline-block; /* So the ::after is relative to the h2’s width */
+	margin-top: 2rem;
+	font: 900 46px / 46px 'Lato', Helvetica, Arial, sans-serif;
+}
+
+h1::after{
+	content: "";
+	display: block;
+	width: 65px;
+	height: 4px;
+	background: #9c0e04;
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+h2{
+	font-size: 13.5pt;
+    font-family: Arial;
+    color: #333333;
+    background-color: transparent;
+    font-style: normal;
+    font-variant: normal;
 	text-align: center;
+    vertical-align: baseline;
+	margin-bottom: 2em;
+}
+
+h3 {
+	font: normal 31px / 32px 'Lato', Helvetica, Arial, sans-serif;
+    position: relative;
 }
 
 .padding {
 	margin: 0 auto;
-	width: 80%;
+    display: block !important;
+    max-width: 840px !important;
+    margin: auto;
 	padding: 40px 120px;
 	background-color: rgba(255,255,255,0.9);
 	background-blend-mode: lighten;
@@ -25,6 +68,14 @@ h1 {
 	text-decoration: none;
 }
 
+.list-container {
+	margin-top: 4em;
+}
+
+.list {
+	margin-bottom: 2em;
+}
+
 .list ul {
 	columns: 4;            /* Number of columns */
 	column-gap: 2rem;
@@ -38,6 +89,19 @@ h1 {
 	text-decoration: underline;
 }
 
+.list h2{
+	padding-left: 25px;
+}
+
 .list a:hover{
 	text-decoration: none;
+}
+
+.list ul li{
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+	padding: 5%;
+	padding-left: 10px;
 }
