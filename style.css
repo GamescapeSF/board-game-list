@@ -31,7 +31,7 @@ h1::after{
 	transform: translateX(-50%);
 }
 
-h2{
+.list-header h2{
 	font-size: 13.5pt;
     font-family: Arial;
     color: #333333;
